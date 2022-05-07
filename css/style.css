@@ -1,0 +1,289 @@
+/* GENERAL STYLING */
+html { scroll-behavior: smooth; }
+*::-webkit-scrollbar { width: 3px; background-color: #eee; } 
+*::-webkit-scrollbar-track { background-color: #ccc; width:1px; border:1px solid #fff; }
+*::-webkit-scrollbar-button { display: none; }
+*::-webkit-scrollbar-thumb { background-color: #000; }
+h3 {font-size: 13px;font-weight: 400;}
+h2 {font-size: 32px;font-weight: 400;color: #1886C7;text-transform: uppercase;}
+p {	font-size: 15px;}
+.btnScrollUp {cursor: pointer;position: fixed;right: 20px;bottom: 10px;width: 40px;height: 40px;
+	background: url(../img/btnYukariGit.png) no-repeat center center;background-size: contain; }
+
+/* NAVBAR */
+.navbar { border-bottom: #1886C7 4px solid;}
+.navbar .navbar-brand {	font-family: "Kaushan Script", cursive; font-style: italic; font-weight: 700; color: #1886C7; font-size: 22px; }
+.bg-dark { background-color: rgba(0,0,0,1) !important; }
+.nav-link {text-transform: uppercase;transition: color .5s ease !important;}
+.nav-link:hover { color: #1886C7 !important; }
+
+/* HEADER SECTİON */
+#header { background: url('../img/bg-header.jpg') no-repeat center center fixed;
+	background-size: cover;	height: 100vh;}
+#header .overlay {	background-color: rgba(0,0,0,.7);}
+#header .row {height: 100vh;}
+#header span {	color: #1886C7 !important;}
+
+#header .nav-link {
+	width: 160px;
+	height: 50px;
+	border-radius: 170px;
+	border: 3px solid #1886C7;
+	margin: 0 auto;
+	margin-bottom: 20px;
+
+}
+
+#header .nav-link:hover {
+	color: #1886C7; 
+	cursor: pointer;
+}
+
+
+/* FEATURES SECTİON */
+#feature hr{
+	width: 150px;
+	height: 2px;
+	background-color: #1886C7;
+	border: none;
+	margin: 0 auto;
+}
+
+#features .fab, .fas { font-size: 40px; }
+.feature-top { 
+	padding: 60px 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	color: #1886C7;	
+	transition: color .5s ease !important;
+}
+
+.feature-top p { 
+	margin-top: 20px;
+}
+
+.feature-top:hover { 
+	color: #000; 
+	cursor: pointer;
+}
+
+.feature-top:hover i { 
+	transform: translateY(-20px);
+}
+
+.feature-top i { 
+	transition: all .5s ease-in-out;
+}
+/* HISTORY SECTION */
+#ourHistory h2 { border-left: 6px solid #1886C7; padding-left: 30px; }
+#ourHistory .col-md-6 { display: inline;}
+#ourHistory p { text-align: justify; line-height: 25px; }
+
+/* TEAM SECTION */
+#team .card {border:none; cursor: pointer; 	}
+#team .col-md-3:hover { opacity: 0.8; transition: all 0.5s ease; }
+#team .fab { font-size: 24px;}
+
+/* WHAT WE DO SECTION */
+#whatWeDo {
+	background: linear-gradient(
+		rgba(0,0,0, .7), 
+		rgba(0,0,0, .7)
+	), /* birinci ve 2. değer aynı verdik. black 70% opacity */
+	url(../img/y1.jpg) fixed center center no-repeat;
+	background-size: cover;
+}
+
+/* portfolio section */
+#portfolio h3 { font-size: 16px; font-weight: 300; }
+#portfolio .fa { font-size: 24px; margin-bottom: 20px; }
+.imageContainer { position: relative; cursor: pointer; }
+.imageOverlay { position: absolute; top: 0; bottom:0; left: 0; right: 0; height: 100%; background-color: #1886C7; 
+	opacity: 0; transition: all 1s ease;}
+.imageContainer:hover  .imageOverlay { opacity: .7; }
+.imageText { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+#whatWeDo h4 {
+	color: #000000;
+}
+
+#aboutUs hr{
+	width: 75px;
+	height: 2px;
+	background-color: #1886C7;
+	border: none;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+
+#ekibimiz hr{
+	width: 75px;
+	height: 2px;
+	background-color: #1886C7;
+	border: none;
+	margin: 0 auto;
+}
+
+#etkinlikler hr {
+	width: 117px;
+	height: 2px;
+	background-color: #1886C7;
+	border: none;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+
+#portfolio hr {
+	width: 117px;
+	height: 2px;
+	background-color: #1886C7;
+	border: none;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+
+#about {
+	background: linear-gradient(
+	rgba(0,0,0, .7),
+	rgba(0,0,0, .7)
+	),
+	url(../img/y.jpg) fixed center center no-repeat;
+	background-size: cover;
+}
+
+#about .p{
+	background-color: #1886C7;
+}
+
+#iletisim hr {
+	width: 65px;
+	height: 2px;
+	background-color: #1886C7;
+	border: none;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+
+/* EKİBİMİZ*/
+#ekibimiz {
+	padding-top: 90px;
+	padding-bottom: 70px;
+	background-color: #f9f9f9
+}
+
+.ekibimiz-content .ekibimiz-circle {
+	width: 160px;
+	height: 160px;
+	border-radius: 170px;
+	border: 6px solid #fff;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background-color: black;
+
+}
+
+.ekibimiz-content h4 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.ekibimiz-content h5 {
+	font-family: "Roboto Slab", Serif;
+	font-size: 14px;
+	color: #2E2B29;
+}
+
+.ekibimiz-content .fab {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	border: 2px solid #0070e4;
+	line-height: 26px;
+}
+
+#ekibimiz p { 
+	margin: 10px auto;
+	font-size: 16px;
+	color: #2E2B29;
+}
+
+/* ETKİNLİKLER*/
+#etkinliklerimiz {
+	background: linear-gradient(
+	rgba(0,0,0, .7),
+	rgba(0,0,0, .7)
+	),
+	url(../img/y.jpg) fixed center center no-repeat;
+	background-size: cover;
+}
+
+#etkinlikler {
+	padding-top: 80px; 
+}
+
+.etkinlikler-content .row{
+	margin-bottom: 90px;
+}
+.etkinlikler-content h4 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.etkinlikler-content p {
+	font-family: "Roboto Slab", Serif;
+	font-size: 14px;
+	color: #2E2B29;
+}
+
+.etkinlikler-content .img-circle {
+	border-radius: 180px;
+	border: 4px solid #1886C7;
+}
+
+/* İLETİŞİM */
+#iletisim {
+	background: url(../img/iletisim/map-image.png) no-repeat center fixed;
+	background-color: #000;
+	height: 750px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	padding: 120px 0;
+	color: #fff;
+}
+
+#iletisim h4 {
+ 	font-size: 25px;
+ 	font-weight: 500;
+ 	color: #1886C7;
+}
+
+#iletisim .input-group-prepend span {
+ 	width: 50px; 
+ 	background-color: #1886c7;
+}
+
+#iletisim p {
+ 	margin: 10px auto;
+	font-family: "Roboto Slab", Serif;
+	font-size: 16px;
+	color: #f4f4f4;
+}
+
+#iletisim .harita {
+	border: 10px solid #fff;
+	padding: 0;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 992px) {
+	.display-3 { font-size: 35px !important }
+	#caseStudy .caseArea { margin-right: 0px;  }
+	#caseStudy .caseImage { display: none; } 
+	#contact { text-align: center; }
+} 
